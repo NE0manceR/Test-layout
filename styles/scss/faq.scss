@@ -1,0 +1,40 @@
+.faq {
+  &__question-wrap {
+    max-width: 860px;
+    margin: 0 auto;
+    padding-bottom: 271px;
+
+    @media (max-width: 1100px) {
+      padding-bottom: 76px;
+    }
+  }
+
+  &__question {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 20px 20px 0;
+    border-bottom: 2px solid black;
+
+    &__title {
+      font-size: 24px;
+
+      @media (max-width: 700px) {
+        font-size: 16px;
+      }
+
+      @media (max-width: 700px) {
+        font-size: 12px;
+      }
+    }
+
+    &__img {
+      width: 19px;
+      height: 19px;
+    }
+  }
+
+  &__question:nth-child(1) {
+    border-top: 2px solid black;
+  }
+}

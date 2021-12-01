@@ -1,0 +1,144 @@
+$main_blue: #0053D0;
+
+* {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+
+.content {
+  max-width: 1192px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.cta-btn {
+  padding: 24px 55px;
+  width: max-content;
+  background-color: $main_blue;
+  border: none;
+  color: white;
+  font-weight: 600;
+  font-size: 18px;
+  transition: 0.3s;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #0140a0;
+  }
+
+  @media (max-width: 1100px) {
+    padding: 14px 29px;
+    font-size: 12px;
+  }
+}
+
+.section-title {
+  font-weight: bold;
+  font-size: 80px;
+  margin-bottom: 34px;
+
+  @media (max-width: 1100px) {
+    margin-bottom: 24px;
+    font-size: 40px;
+  }
+
+  @media (max-width: 360px) {
+    font-size: 24px;
+  }
+}
+
+.section-subtitle {
+  font-weight: normal;
+  font-size: 24px;
+  max-width: 560px;
+  padding-left: 100px;
+  margin-bottom: 54px;
+
+  @media (max-width: 600px) {
+    padding: 0;
+    font-size: 14px;
+  }
+}
+
+.social-icon {
+  display: block;
+  width: 40px;
+  height: 40px;
+  transition: 0.3s;
+}
+
+.icon-facebook {
+  background: url('../../images/icons/facebook-black.svg');
+
+  &:hover {
+    background: url('../../images/icons/facebook-blue.svg');
+  }
+}
+
+.icon-instagram {
+  background: url('../../images/icons/instagram-black.svg');
+
+  &:hover {
+    background: url('../../images/icons/instagram-blue.svg');
+  }
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  text-decoration: none;
+  color: black;
+
+  &__text-wrap {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 4px;
+
+    @media (max-width: 400px) {
+      font-size: 20px;
+    }
+  }
+
+  img {
+    width: 41px;
+    height: 38px;
+  }
+
+  &__description {
+    font-weight: 600;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.65);
+  }
+}
+
+.crumbs {
+  display: flex;
+  gap: 10px;
+  padding-top: 67px;
+
+  @media (max-width: 530px) {
+    padding-top: 24px;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: black;
+    font-weight: normal;
+    font-size: 24px;
+
+    @media (max-width: 530px) {
+      font-size: 12px;
+    }
+  }
+}

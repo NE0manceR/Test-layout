@@ -1,0 +1,124 @@
+.contact {
+  padding-bottom: 150px;
+}
+@media (max-width: 950px) {
+  .contact {
+    padding-bottom: 66px;
+  }
+}
+.contact__text {
+  display: flex;
+  flex-direction: column;
+  color: rgba(0, 0, 0, 0.65);
+}
+@media (max-width: 900px) {
+  .contact__text {
+    order: 1;
+  }
+}
+.contact__text_info {
+  max-width: 560px;
+  font-size: 24px;
+  margin-bottom: 76px;
+}
+@media (max-width: 900px) {
+  .contact__text_info {
+    margin-bottom: 24px;
+  }
+}
+.contact__text_link {
+  display: flex;
+  flex-direction: column;
+  width: max-content;
+  gap: 12px;
+  margin-bottom: 34px;
+  font-size: 24px;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.65);
+}
+@media (max-width: 900px) {
+  .contact__text_link {
+    gap: 6px;
+    font-size: 16px;
+  }
+}
+.contact__text_link:hover .contact__text_link-title {
+  color: #0053D0;
+}
+.contact__text_link-title {
+  font-weight: bold;
+  font-size: 24px;
+  transition: 0.3s;
+}
+@media (max-width: 900px) {
+  .contact__text_link-title {
+    font-size: 16px;
+  }
+}
+.contact__social_title {
+  display: block;
+  margin-bottom: 12px;
+}
+.contact__wrap {
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 900px) {
+  .contact__wrap {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+.contact__social-wrap {
+  display: flex;
+  gap: 20px;
+}
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.contact__form_input {
+  padding: 24px;
+  font-size: 18px;
+  outline: none;
+  border: 2px solid #000000;
+  width: 460px;
+}
+@media (max-width: 900px) {
+  .contact__form_input {
+    width: 100%;
+  }
+}
+@media (max-width: 1100px) {
+  .contact__form_input {
+    padding: 14px;
+    font-size: 14px;
+  }
+}
+.contact__form_input::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+.contact__form_input:focus {
+  border: 2px solid #0053D0;
+}
+.contact__form_btn {
+  width: 100%;
+}
+.contact__input-wrap {
+  display: flex;
+  border: 2px solid #000000;
+  width: 460px;
+  padding-right: 24px;
+}
+@media (max-width: 900px) {
+  .contact__input-wrap {
+    width: 100%;
+  }
+}
+.contact__input-wrap .contact__form_input {
+  display: block;
+  flex-grow: 1;
+  border: none;
+  width: auto;
+}
